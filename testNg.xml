@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Test Suite">
+    <listeners>
+        <listener class-name="com.test.utilityMethods.RetryListener"/>
+        <listener class-name="com.test.utilityMethods.ScreenshotListener"/>
+    </listeners>
+    <test name="welcome ">
+        <parameter name="driverType" value="chrome"/>
+        <classes>
+            <class name="com.test.testCases.FirstTest">
+                <methods>
+                    <include name="simpleTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
